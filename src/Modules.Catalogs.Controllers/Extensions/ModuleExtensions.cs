@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Modules.Catalogs.Infrastructure.Extensions;
 
 namespace Modules.Catalogs
 {
@@ -7,6 +8,7 @@ namespace Modules.Catalogs
     {
         public static IServiceCollection AddCatalogsModule(this IServiceCollection services)
         {
+            services.AddCatalogsInfrastructure();
             return services;
         }
 

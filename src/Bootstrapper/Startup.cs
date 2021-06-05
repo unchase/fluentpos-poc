@@ -20,7 +20,7 @@ namespace Bootstrapper
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddInfrastructure();
+            services.AddSharedInfrastructure();
             services.AddCatalogsModule();
         }
 
@@ -28,7 +28,7 @@ namespace Bootstrapper
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseRouting();
-
+            app.UseSharedInfrastructure();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

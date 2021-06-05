@@ -3,11 +3,8 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
-    <Folder Include="Persistence\" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\src\Modules.Catalogs.Core\Modules.Catalogs.Core.csproj" />
     <ProjectReference Include="..\src\Shared.Infrastructure\Shared.Infrastructure.csproj" />
   </ItemGroup>
 
