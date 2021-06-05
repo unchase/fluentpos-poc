@@ -18,11 +18,10 @@ namespace Shared.Infrastructure.Persistence.MySQL
         {
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 21));
             var options = services.GetOptions<MySQLOptions>("mysql");
-            services.AddDbContext<T>(m => m.UseMySql(options.ConnectionString, serverVersion));
+            services.AddDbContext<T>(m => m.UseMySql(options.ConnectionString, serverVersion,e=>e.MigrationsAssembly(typeof(T).Assembly.FullName)));
             using var scope = services.BuildServiceProvider().CreateScope();
             var dbContext = scope.ServiceProvider.GetRequiredService<T>();
             dbContext.Database.Migrate();
-
             return services;
         }
     }

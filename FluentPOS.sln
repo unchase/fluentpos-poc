@@ -37,9 +37,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Catalogs", "src\Mod
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{D1E949DF-445D-4218-B8BA-8FCA0DBFE1B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Catalogs.Core", "src\Modules.Catalogs.Core\Modules.Catalogs.Core.csproj", "{1BBC117B-89D7-483A-97F3-A031FC964C7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Catalogs.Core", "src\Modules.Catalogs.Core\Modules.Catalogs.Core.csproj", "{1BBC117B-89D7-483A-97F3-A031FC964C7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules.Catalogs.Infrastructure", "Modules.Catalogs.Infrastructure\Modules.Catalogs.Infrastructure.csproj", "{A2E419A5-9E34-45D8-8466-B59E5FA0A0F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Catalogs.Infrastructure", "src\Modules.Catalogs.Infrastructure\Modules.Catalogs.Infrastructure.csproj", "{A2E419A5-9E34-45D8-8466-B59E5FA0A0F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Accounts", "Accounts", "{BCDE59A2-E549-488C-9345-B8075D028098}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reports", "Reports", "{10D3E161-47DC-4A30-BC02-F917C0DA68CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62D5019E-0D20-4D0B-8ABB-78F97ED6DCC9}"
+	ProjectSection(SolutionItems) = preProject
+		add-migrations.md = add-migrations.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,6 +103,8 @@ Global
 		{D1E949DF-445D-4218-B8BA-8FCA0DBFE1B6} = {4E4F6E37-5A4F-4246-81FB-5CE5BF2B7B37}
 		{1BBC117B-89D7-483A-97F3-A031FC964C7A} = {408A6296-CD34-4016-91F2-C81782724068}
 		{A2E419A5-9E34-45D8-8466-B59E5FA0A0F9} = {408A6296-CD34-4016-91F2-C81782724068}
+		{BCDE59A2-E549-488C-9345-B8075D028098} = {2A6EB1E6-5A7C-4732-99A2-0300916FA585}
+		{10D3E161-47DC-4A30-BC02-F917C0DA68CB} = {2A6EB1E6-5A7C-4732-99A2-0300916FA585}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {470B6C9A-5A3C-4ADA-B916-03AF3F25003D}
