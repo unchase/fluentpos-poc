@@ -1,3 +1,3 @@
-## Catalog
-### Navigate to `src\Modules.Catalogs.Infrastructure` and execute the following.
-dotnet ef migrations add CatalogsInit --startup-project ../Bootstrapper -o Persistence/Migrations/
+### Important - While Switching from MySQL to MSSQL via EFcore, make sure to delete all the migrations, and re-add migrations via the below CLI Command.
+### Navigate to `src\Modules.{Module_Name}.Infrastructure` and execute the following.
+dotnet ef migrations add {commitMessage} --startup-project ../Bootstrapper -o Persistence/Migrations/

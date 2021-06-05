@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Shared.Infrastructure.Controllers;
 using Shared.Infrastructure.Middlewares;
+using Shared.Infrastructure.Persistence.MSSQL;
 using Shared.Infrastructure.Persistence.MySQL;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,7 @@ namespace Shared.Infrastructure.Extensions
                 {
                     manager.FeatureProviders.Add(new InternalControllerFeatureProvider());
                 });
-            services.AddMySQL();
+            services.AddMSSQL();
             services.AddSingleton<GlobalExceptionHandler>();
             services.AddSwaggerDocumentation();
             return services;

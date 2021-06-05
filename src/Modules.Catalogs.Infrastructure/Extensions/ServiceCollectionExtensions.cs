@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Modules.Catalogs.Infrastructure.Persistence;
+using Shared.Infrastructure.Persistence.MSSQL;
 using Shared.Infrastructure.Persistence.MySQL;
 
 namespace Modules.Catalogs.Infrastructure.Extensions
@@ -8,7 +9,7 @@ namespace Modules.Catalogs.Infrastructure.Extensions
     {
         public static IServiceCollection AddCatalogsInfrastructure(this IServiceCollection services)
         {
-            services.AddMySql<CatalogsDbContext>();
+            services.AddMSSQL<CatalogsDbContext>();
             return services;
         }
     }
