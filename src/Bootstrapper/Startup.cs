@@ -32,7 +32,6 @@ namespace Bootstrapper
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapGet("/", context => context.Response.WriteAsync("Modular Monolith API"));
             });
         }
     }
