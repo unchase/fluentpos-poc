@@ -1,4 +1,4 @@
-﻿namespace Shared.Infrastructure.Persistence.MySQL
+﻿namespace Shared.Infrastructure.Persistence.Postgres
 {
     public class PostgresSettings
     {

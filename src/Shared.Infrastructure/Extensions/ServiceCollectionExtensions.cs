@@ -5,6 +5,7 @@ using Shared.Infrastructure.Controllers;
 using Shared.Infrastructure.Middlewares;
 using Shared.Infrastructure.Persistence.MSSQL;
 using Shared.Infrastructure.Persistence.MySQL;
+using Shared.Infrastructure.Persistence.Postgres;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -22,7 +23,7 @@ namespace Shared.Infrastructure.Extensions
                 {
                     manager.FeatureProviders.Add(new InternalControllerFeatureProvider());
                 });
-            services.AddMSSQL();
+            services.AddPostgres();
             services.AddSingleton<GlobalExceptionHandler>();
             services.AddSwaggerDocumentation();
             return services;

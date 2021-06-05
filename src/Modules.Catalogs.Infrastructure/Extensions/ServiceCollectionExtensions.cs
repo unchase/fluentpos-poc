@@ -2,6 +2,7 @@
 using Modules.Catalogs.Infrastructure.Persistence;
 using Shared.Infrastructure.Persistence.MSSQL;
 using Shared.Infrastructure.Persistence.MySQL;
+using Shared.Infrastructure.Persistence.Postgres;
 
 namespace Modules.Catalogs.Infrastructure.Extensions
 {
@@ -9,7 +10,7 @@ namespace Modules.Catalogs.Infrastructure.Extensions
     {
         public static IServiceCollection AddCatalogsInfrastructure(this IServiceCollection services)
         {
-            services.AddMSSQL<CatalogsDbContext>();
+            services.AddPostgres<CatalogsDbContext>();
             return services;
         }
     }
