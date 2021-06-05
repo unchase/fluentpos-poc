@@ -3,12 +3,12 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <Folder Include="Entites\" />
+    <Folder Include="Abstractions\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Middlewares\" />
-  </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\Shared.Abstractions\Shared.Abstractions.csproj" />
   </ItemGroup>
