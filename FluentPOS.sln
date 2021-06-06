@@ -25,21 +25,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blazor", "Blazor", "{D8B4C9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{B59935A9-4288-4A52-B74E-BDFB36EA9225}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootstrapper", "src\Bootstrapper\Bootstrapper.csproj", "{6F036BDD-0283-454B-8701-8198BDBA738B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bootstrapper", "src\Server\API\Bootstrapper.csproj", "{6F036BDD-0283-454B-8701-8198BDBA738B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{3527F964-727A-460F-9148-9A7D7799E433}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Infrastructure", "src\Shared.Infrastructure\Shared.Infrastructure.csproj", "{1884A9EB-DA76-450D-8646-2FB3F19F76A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Infrastructure", "src\Server\Shared\Shared.Infrastructure\Shared.Infrastructure.csproj", "{1884A9EB-DA76-450D-8646-2FB3F19F76A7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Abstractions", "src\Shared.Abstractions\Shared.Abstractions.csproj", "{0CDC02BA-FA0C-4081-9CB1-976009E527A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Abstractions", "src\Server\Shared\Shared.Abstractions\Shared.Abstractions.csproj", "{0CDC02BA-FA0C-4081-9CB1-976009E527A3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Catalogs", "src\Modules.Catalogs.Controllers\Modules.Catalogs.csproj", "{F117E9E7-AE75-46E7-AF89-5E7FD80A4F9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Catalogs", "src\Server\Modules\Catalogs\Modules.Catalogs.Controllers\Modules.Catalogs.csproj", "{F117E9E7-AE75-46E7-AF89-5E7FD80A4F9A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{D1E949DF-445D-4218-B8BA-8FCA0DBFE1B6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Catalogs.Core", "src\Modules.Catalogs.Core\Modules.Catalogs.Core.csproj", "{1BBC117B-89D7-483A-97F3-A031FC964C7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Catalogs.Core", "src\Server\Modules\Catalogs\Modules.Catalogs.Core\Modules.Catalogs.Core.csproj", "{1BBC117B-89D7-483A-97F3-A031FC964C7A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Catalogs.Infrastructure", "src\Modules.Catalogs.Infrastructure\Modules.Catalogs.Infrastructure.csproj", "{A2E419A5-9E34-45D8-8466-B59E5FA0A0F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modules.Catalogs.Infrastructure", "src\Server\Modules\Catalogs\Modules.Catalogs.Infrastructure\Modules.Catalogs.Infrastructure.csproj", "{A2E419A5-9E34-45D8-8466-B59E5FA0A0F9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Accounts", "Accounts", "{BCDE59A2-E549-488C-9345-B8075D028098}"
 EndProject
