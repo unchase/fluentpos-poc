@@ -3,12 +3,16 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Modules.Catalogs.Infrastructure.Persistence.Migrations
 {
-    public partial class initPostGres : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.EnsureSchema(
+                name: "Catalog");
+
             migrationBuilder.CreateTable(
                 name: "Brands",
+                schema: "Catalog",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
@@ -23,6 +27,7 @@ namespace Modules.Catalogs.Infrastructure.Persistence.Migrations
 
             migrationBuilder.CreateTable(
                 name: "Products",
+                schema: "Catalog",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
@@ -45,6 +50,7 @@ namespace Modules.Catalogs.Infrastructure.Persistence.Migrations
                     table.ForeignKey(
                         name: "FK_Products_Brands_BrandId1",
                         column: x => x.BrandId1,
+                        principalSchema: "Catalog",
                         principalTable: "Brands",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -52,6 +58,7 @@ namespace Modules.Catalogs.Infrastructure.Persistence.Migrations
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_BrandId1",
+                schema: "Catalog",
                 table: "Products",
                 column: "BrandId1");
         }
@@ -59,10 +66,12 @@ namespace Modules.Catalogs.Infrastructure.Persistence.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Products");
+                name: "Products",
+                schema: "Catalog");
 
             migrationBuilder.DropTable(
-                name: "Brands");
+                name: "Brands",
+                schema: "Catalog");
         }
     }
 }

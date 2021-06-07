@@ -3,8 +3,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Shared.Infrastructure.Controllers;
 using Shared.Infrastructure.Middlewares;
-using Shared.Infrastructure.Persistence.MSSQL;
-using Shared.Infrastructure.Persistence.MySQL;
 using Shared.Infrastructure.Persistence.Postgres;
 using System;
 using System.Collections.Generic;

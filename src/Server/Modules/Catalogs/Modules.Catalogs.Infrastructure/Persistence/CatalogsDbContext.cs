@@ -9,5 +9,10 @@ namespace Modules.Catalogs.Infrastructure.Persistence
         {}
         public DbSet<Product> Products { get; set; }
         public DbSet<Brand> Brands { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.HasDefaultSchema("Catalog");
+            modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
+        }
     }
 }
