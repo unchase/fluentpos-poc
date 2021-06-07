@@ -6,6 +6,6 @@ namespace Modules.Catalogs.Controllers
     [Route(BasePath + "/[controller]")]
     internal abstract class BaseController : ControllerBase
     {
-        protected const string BasePath = "api/catalogs";
+        protected const string BasePath = "api/catalog";
     }
 }

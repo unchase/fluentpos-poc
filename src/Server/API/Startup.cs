@@ -16,8 +16,10 @@ namespace Bootstrapper
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSharedInfrastructure();
-            services.AddCatalogsModule();
+            services
+                .AddSharedInfrastructure()
+                .AddCatalogsModule()
+                .AddRouting(options => options.LowercaseUrls = true);
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
