@@ -21,6 +21,7 @@ namespace Shared.Infrastructure.Extensions
                 {
                     manager.FeatureProviders.Add(new InternalControllerFeatureProvider());
                 });
+            services.AddRouting(options => options.LowercaseUrls = true);
             services.AddPostgres();
             services.AddSingleton<GlobalExceptionHandler>();
             services.AddSwaggerDocumentation();

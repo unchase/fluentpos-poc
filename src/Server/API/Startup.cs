@@ -18,17 +18,13 @@ namespace Bootstrapper
         {
             services
                 .AddSharedInfrastructure()
-                .AddCatalogsModule()
-                .AddRouting(options => options.LowercaseUrls = true);
+                .AddCatalogsModule();
+                
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseRouting();
             app.UseSharedInfrastructure();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            
         }
     }
 }

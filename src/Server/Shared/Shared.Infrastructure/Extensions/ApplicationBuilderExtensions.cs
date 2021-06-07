@@ -14,8 +14,14 @@ namespace Shared.Infrastructure.Extensions
     {
         public static IApplicationBuilder UseSharedInfrastructure(this IApplicationBuilder app)
         {
+
+            app.UseRouting();
             app.UseMiddleware<GlobalExceptionHandler>();
             app.UseSwaggerDocumentation();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
             return app;
         }
         private static IApplicationBuilder UseSwaggerDocumentation(this IApplicationBuilder app)
